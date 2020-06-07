@@ -12,11 +12,23 @@ banner() {
 			cd ~/Termux-Test/files
 			bash high.sh
 			}
+			uo() {
+				cd ~
+				wget -q https://raw.githubusercontent.com/rooted-cyber/Termux-Test/master/files/version.txt
+				printf "\n\033[1;92m Checking for update..\n"
+		update="$(cat version.txt|grep -o "1.0")"
+		if [ -z $update ];then
+		update
+		fi
+		rm -f version.txt > /dev/null 2>&1
+		}
 	menu () {
 		banner
 		printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Termux Basic Test \033[1;91m(\033[1;97m Questions : 40 and score : 800\033[1;91m)\n"
 		printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Your Last Score\n"
 		printf "\033[1;92m[\033[0m3\033[1;92m]\033[1;93m Exit\n\n\n"
+		uo
+		printf "\n\033[1;93m Your tool is update\n\n"
 		choose
 		}
 		choose () {
@@ -36,5 +48,4 @@ banner() {
 		cd ~/Termux-Test/files
 		bash setup.sh
 		fi
-		
 		
