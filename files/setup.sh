@@ -22,5 +22,6 @@ rn() {
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> TT
 	echo "bash ~/Termux-Test/test.sh" >> TT
 	chmod 777 TT
-	echo "Now you can use : TT
+	echo "Now you can use : TT"
 	}
+	s
