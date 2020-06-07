@@ -7,7 +7,7 @@ banner() {
 	menu () {
 		banner
 		cd ~/Termux-Test
-		cd result
+		cd Result
 		if [ -e *txt ];then
 		random
 		cat *

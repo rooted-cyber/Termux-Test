@@ -1,6 +1,6 @@
 folder () {
 	#cd /sdcard/Github/Termux-Test/result
-	cd ~/Termux-files/Result
+	cd ~/Termux-Test/Result
 	}
 	banner() {
 	clear
