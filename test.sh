@@ -21,6 +21,8 @@ banner() {
 				cd $PREFIX/bin
 				rm -f TT > /dev/null 2>&1
 				cd ~
+				random
+				printf "\n Updating packages… \n"
 				git clone https://github.com/rooted-cyber/Termux-Test
 				cd Termux-Test
 				bash test.sh
