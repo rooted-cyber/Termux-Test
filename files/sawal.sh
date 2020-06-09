@@ -17,7 +17,7 @@ folder () {
 			}
 			sc() {
 				printf "\033[1;93m You complete Termux basic test\n\n"
-				printf "\033[1;92m You score : 800\n"
+				printf "\033[1;92m Your points : 1000\n"
 				}
 	wrong () {
 		printf "\n\033[1;91m[×] Wrong answer!!\n\n"
@@ -28,9 +28,200 @@ folder () {
 		echo
 		fi
 		}
+		sawal50 () {
+			correct
+			printf "\nYour Points : 1000\n" >> 1000.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 1000\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m50\033[1;95m)\033[1;93m Termux me /dev/null 2>&1 isse sbhi command ka output hide hota hai to chmod me iske bina iska output hide kaise hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m chmod -F\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m chmod -R\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m chmod -r\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m chmod -f\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		d)correct
+		sc ;;
+		b|c|a)wrong ;;
+		*)sawal50 ;;
+		esac
+		}
+		sawal49 () {
+			correct
+			printf "\nYour Points : 980\n" >> 980.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 980\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m49\033[1;95m)\033[1;93m Termux me apt or pkg k bina koi package install kon sa file se kr skte hai ? \n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m .zip\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m .deb\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m .tar\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m .gz\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		b)sawal50 ;;
+		a|c|d)wrong ;;
+		*)sawal49 ;;
+		esac
+		}
+		sawal48() {
+			correct
+			printf "\nYour Points : 960\n" >> 960.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 960\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m48\033[1;95m)\033[1;93m Termux me wget se koi file download krte hai to uska name change rhe or download ho uske liye kya command hai ? \n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m wget -O name <link>\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌wget -n name <link>\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m wget -U name <link>\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m wget -q name <link>\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		a)sawal49 ;;
+		b|c|d)wrong ;;
+		*)sawal48 ;;
+		esac
+		}
+		sawal47() {
+			correct
+			printf "\nYour Points : 940\n" >> 940.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 940\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m47\033[1;95m)\033[1;93m Termux me /dev/null 2>&1 isse sbhi command ka output hide hota hai to wget me iske bina iska output hide kaise hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m wget -O <link>\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌wget -m <link>\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m wget -U <link>\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m wget -q <link>\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		d)sawal48 ;;
+		b|c|a)wrong ;;
+		*)sawal47 ;;
+		esac
+		}
+		sawal46  () {
+			correct
+			printf "\nYour Points : 920\n" >> 920.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 920\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m46\033[1;95m)\033[1;93m Termux me koi v file ya folder ka name me space add kon sa symbol se krte hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m /\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌:\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m ‌‌\‌‌\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m &&\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		c)sawal47 ;;
+		b|d|a)wrong ;;
+		*)sawal46 ;;
+		esac
+		}
+		sawal45  () {
+			correct
+			printf "\nYour Points : 900\n" >> 900.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 900\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m45\033[1;95m)\033[1;93m Termux me pip install krne ka command kya hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m pip install pip\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌pkg install pip\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m apt install pip\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m apt-get install python\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		d)sawal46 ;;
+		b|c|a)wrong ;;
+		*)sawal45 ;;
+		esac
+		}
+		sawal44  () {
+			correct
+			printf "\nYour Points : 880\n" >> 880.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 880\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m44\033[1;95m)\033[1;93m Termux me speedtest install krne ka command kya hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m pip install speedtest-cli\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌pkg install speedtest-cli\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m apt install speedtest-cli\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m apt-get install speedtest-cli\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		a)sawal45 ;;
+		b|c|d)wrong ;;
+		*)sawal44 ;;
+		esac
+		}
+		sawal43  () {
+			correct
+			printf "\nYour Points : 860\n" >> 860.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 860\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m43\033[1;95m)\033[1;93m Termux me lolcat install krne ka command kya hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m pip install lolcat\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌pkg install lolcat\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m apt install lolcat\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m apt-get install lolcat\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		a)sawal44 ;;
+		b|c|d)wrong ;;
+		*)sawal43 ;;
+		esac
+		}
+		sawal42  () {
+			correct
+			printf "\nYour Points : 840\n" >> 840.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 840\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m42\033[1;95m)\033[1;93m Termux me echo se koi v word print krte h to echo se koi command run kaise hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m echo -e -c "ls"\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌echo "$(ls)"\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m A or B dono\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m koi v nhi\n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		b)sawal43 ;;
+		a|c|d)wrong ;;
+		*)sawal42 ;;
+		esac
+		}
+		sawal41  () {
+			correct
+			printf "\nYour Points : 820\n" >> 820.txt
+			banner
+			printf "\033[1;92m Your score :\033[1;97m 820\n\n"
+			#banner
+			printf "\033[1;95m(\033[0m41\033[1;95m)\033[1;93m Termux me koi v command ka output hide krte h or usko hide kr k background me run kon sa command se hota hai ?\n\n"
+		printf "\033[1;91m(\033[0ma\033[1;91m)\033[0m /dev/null 2>&1 &\n"
+		printf "\033[1;91m(\033[0mb\033[1;91m)\033[0m ‌‌ -b /dev/null 2>&4\n"
+		printf "\033[1;91m(\033[0mc\033[1;91m)\033[0m /dev/null:\n"
+		printf "\033[1;91m(\033[0md\033[1;91m)\033[0m /dev/null 2>&1 \n\n"
+		echo -e -n "\033[1;96m Answer : "
+		read a
+		case $a in
+		a)sawal42 ;;
+		b|c|d)wrong ;;
+		*)sawal41 ;;
+		esac
+		}
 		sawal40  () {
 			correct
-			printf "\nYour Score : 800\n" >> 800.txt
+			printf "\nYour Points : 800\n" >> 800.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 800\n\n"
 			#banner
@@ -42,15 +233,14 @@ folder () {
 		echo -e -n "\033[1;96m Answer : "
 		read a
 		case $a in
-		d)correct
-		sc ;;
+		d)sawal41 ;;
 		b|c|a)wrong ;;
 		*)sawal40 ;;
 		esac
 		}
 		sawal39  () {
 			correct
-			printf "\nYour Score : 780\n" >> 780.txt
+			printf "\nYour Points : 780\n" >> 780.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 780\n\n"
 			#banner
@@ -69,7 +259,7 @@ folder () {
 		}
 		sawal38 () {
 			correct
-			printf "\nYour Score : 760\n" >> 760.txt
+			printf "\nYour Points : 760\n" >> 760.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 760\n\n"
 			#banner
@@ -88,7 +278,7 @@ folder () {
 		}
 		sawal37 () {
 			correct
-			printf "\nYour Score : 740\n" >> 740.txt
+			printf "\nYour Points : 740\n" >> 740.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 740\n\n"
 			#banner
@@ -107,7 +297,7 @@ folder () {
 		}
 		sawal36 () {
 			correct
-			printf "\nYour Score : 720\n" >> 720.txt
+			printf "\nYour Points : 720\n" >> 720.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 720\n\n"
 			#banner
@@ -126,7 +316,7 @@ folder () {
 		}
 		sawal35  () {
 			correct
-			printf "\nYour Score : 700\n" >> 700.txt
+			printf "\nYour Points : 700\n" >> 700.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 700\n\n"
 			#banner
@@ -145,7 +335,7 @@ folder () {
 		}
 		sawal34 () {
 			correct
-			printf "\nYour Score : 680\n" >> 680.txt
+			printf "\nYour Points : 680\n" >> 680.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 680\n\n"
 			#banner
@@ -164,7 +354,7 @@ folder () {
 		}
 		sawal33  () {
 			correct
-			printf "\nYour Score : 660\n" >> 660.txt
+			printf "\nYour Points : 660\n" >> 660.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 660\n\n"
 			#banner
@@ -183,7 +373,7 @@ folder () {
 		}
 		sawal32 () {
 			correct
-			printf "\nYour Score : 640\n" >> 640.txt
+			printf "\nYour Points : 640\n" >> 640.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 640\n\n"
 			#banner
@@ -202,7 +392,7 @@ folder () {
 		}
 		sawal31 () {
 			correct
-			printf "\nYour Score : 620\n" >> 620.txt
+			printf "\nYour Points : 620\n" >> 620.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 620\n\n"
 			#banner
@@ -221,7 +411,7 @@ folder () {
 		}
 		sawal30 () {
 			correct
-			printf "\nYour Score : 600\n" >> 600.txt
+			printf "\nYour Points : 600\n" >> 600.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 600\n\n"
 			#banner
@@ -240,7 +430,7 @@ folder () {
 		}
 		sawal29 () {
 			correct
-			printf "\nYour Score : 580\n" >> 580.txt
+			printf "\nYour Points : 580\n" >> 580.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 560\n\n"
 			#banner
@@ -259,7 +449,7 @@ folder () {
 		}
 		sawal28 () {
 			correct
-			printf "\nYour Score : 560\n" >> 560.txt
+			printf "\nYour Points : 560\n" >> 560.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 560\n\n"
 			#banner
@@ -278,7 +468,7 @@ folder () {
 		}
 		sawal27 () {
 			correct
-			printf "\nYour Score : 540\n" >> 540.txt
+			printf "\nYour Points : 540\n" >> 540.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 540\n\n"
 			#banner
@@ -297,7 +487,7 @@ folder () {
 		}
 		sawal26 () {
 			correct
-			printf "\nYour Score : 520\n" >> 520.txt
+			printf "\nYour Points : 520\n" >> 520.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 520\n\n"
 			#banner
@@ -316,7 +506,7 @@ folder () {
 		}
 		sawal25 () {
 			correct
-			printf "\nYour Score : 500\n" >> 500.txt
+			printf "\nYour Points : 500\n" >> 500.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 500\n\n"
 			#banner
@@ -335,7 +525,7 @@ folder () {
 		}
 		sawal24 () {
 			correct
-			printf "\nYour Score : 480\n" >> 480.txt
+			printf "\nYour Points : 480\n" >> 480.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 480\n\n"
 			#banner
@@ -354,7 +544,7 @@ folder () {
 		}
 		sawal23 () {
 			correct
-			printf "\nYour Score : 460\n" >> 460.txt
+			printf "\nYour Points : 460\n" >> 460.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 460\n\n"
 			#banner
@@ -380,7 +570,7 @@ folder () {
 		
 		sawal22 () {
 			correct
-			printf "\nYour Score : 420\n" >> 420.txt
+			printf "\nYour Points : 420\n" >> 420.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 420\n\n"
 			#banner
@@ -399,7 +589,7 @@ folder () {
 		}
 		sawal21 () {
 			correct
-			printf "\nYour Score : 400\n" >> 400.txt
+			printf "\nYour Points : 400\n" >> 400.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 400\n\n"
 			#banner
@@ -418,7 +608,7 @@ folder () {
 		}
 		sawal20 () {
 			correct
-			printf "\nYour Score : 380\n" >> 380.txt
+			printf "\nYour Points : 380\n" >> 380.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 380\n\n"
 			#banner
@@ -437,7 +627,7 @@ folder () {
 		}
 		sawal19 () {
 			correct
-			printf "\nYour Score : 360\n" >> 360.txt
+			printf "\nYour Points : 360\n" >> 360.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 360\n\n"
 			#banner
@@ -456,7 +646,7 @@ folder () {
 		}
 		sawal18 () {
 			correct
-			printf "\nYour Score : 340\n" >> 340.txt
+			printf "\nYour Points : 340\n" >> 340.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 340\n\n"
 			#banner
@@ -475,7 +665,7 @@ folder () {
 		}
 		sawal17 () {
 			correct
-			printf "\nYour Score : 320\n" >> 320.txt
+			printf "\nYour Points : 320\n" >> 320.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 320\n\n"
 			#banner
@@ -494,7 +684,7 @@ folder () {
 		}
 		sawal16 () {
 			correct
-			printf "\nYour Score : 300\n" >> 300.txt
+			printf "\nYour Points : 300\n" >> 300.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 300\n\n"
 			#banner
@@ -513,7 +703,7 @@ folder () {
 		}
 		sawal15 () {
 			correct
-			printf "\nYour Score : 280\n" >> 280.txt
+			printf "\nYour Points : 280\n" >> 280.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 280\n\n"
 			#banner
@@ -532,7 +722,7 @@ folder () {
 		}
 		sawal14 () {
 			correct
-			printf "\nYour Score : 260\n" >> 260.txt
+			printf "\nYour Points : 260\n" >> 260.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 260\n\n"
 			#banner
@@ -551,7 +741,7 @@ folder () {
 		}
 		sawal13 () {
 			correct
-			printf "\nYour Score : 240\n" >> 240.txt
+			printf "\nYour Points : 240\n" >> 240.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 240\n\n"
 			#banner
@@ -570,7 +760,7 @@ folder () {
 		}
 		sawal12 () {
 			correct
-			printf "\nYour Score : 220\n" >> 220.txt
+			printf "\nYour Points : 220\n" >> 220.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 220\n\n"
 			#banner
@@ -589,7 +779,7 @@ folder () {
 		}
 		sawal11 () {
 			correct
-			printf "\nYour Score : 200\n" >> 200.txt
+			printf "\nYour Points : 200\n" >> 200.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 200\n\n"
 			#banner
@@ -608,7 +798,7 @@ folder () {
 		}
 		sawal10 () {
 			correct
-			printf "\nYour Score : 180\n" >> 180.txt
+			printf "\nYour Points : 180\n" >> 180.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 180\n\n"
 			#banner
@@ -627,7 +817,7 @@ folder () {
 		}
 		sawal9 () {
 			correct
-			printf "\nYour Score : 160\n" >> 160.txt
+			printf "\nYour Points : 160\n" >> 160.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 160\n\n"
 			#banner
@@ -646,7 +836,7 @@ folder () {
 		}
 		sawal8 () {
 			correct
-			printf "\nYour Score : 140\n" >> 140.txt
+			printf "\nYour Points : 140\n" >> 140.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 140\n\n"
 			#banner
@@ -665,7 +855,7 @@ folder () {
 		}
 		sawal7() {
 			correct
-			printf "\nYour Score : 120\n" >> 120.txt
+			printf "\nYour Points : 120\n" >> 120.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 120\n\n"
 			#banner
@@ -686,7 +876,7 @@ folder () {
 		}
 		sawal6() {
 			correct
-			printf "\nYour Score : 100\n" >> 100.txt
+			printf "\nYour Points : 100\n" >> 100.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 100\n\n"
 			#banner
@@ -707,7 +897,7 @@ folder () {
 		}
 		sawal5() {
 			correct
-			printf "\nYour Score : 80\n" >> 80.txt
+			printf "\nYour Points : 80\n" >> 80.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 80\n\n"
 			#banner
@@ -728,7 +918,7 @@ folder () {
 		}
 		sawal4() {
 			correct
-			printf "\nYour Score : 60\n" >> 60.txt
+			printf "\nYour Points : 60\n" >> 60.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 60\n\n"
 			#banner
@@ -750,7 +940,7 @@ folder () {
 			
 		sawal3() {
 			correct
-			printf "\nYour Score : 40\n" >> 40.txt
+			printf "\nYour Points : 40\n" >> 40.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 40\n\n"
 			#banner
@@ -773,7 +963,7 @@ folder () {
 			correct
 			#cd result
 			#rm * > /dev/null 2>&1
-			printf "\nYour Score : 20\n" >> 20.txt
+			printf "\nYour Points : 20\n" >> 20.txt
 			banner
 			printf "\033[1;92m Your score :\033[1;97m 20\n\n"
 			printf "\033[1;91m(\033[0m2\033[1;91m)\033[1;92m Koi v folder me jane k bad ek bar pichhe jane k liye konsa command use hota hai ? \n\n"
@@ -808,4 +998,4 @@ folder () {
 		*)sawal1 ;;
 		esac
 		}
-		sawal1
+		sawal46
