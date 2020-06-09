@@ -998,4 +998,4 @@ folder () {
 		*)sawal1 ;;
 		esac
 		}
-		sawal46
+		sawal1
