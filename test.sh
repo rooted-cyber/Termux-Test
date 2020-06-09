@@ -25,6 +25,7 @@ banner() {
 				printf "\n Updating packages… \n"
 				git clone https://github.com/rooted-cyber/Termux-Test
 				cd Termux-Test
+				menu
 				bash test.sh
 				}
 			uo() {
