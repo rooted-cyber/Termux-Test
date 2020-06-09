@@ -31,7 +31,7 @@ banner() {
 				printf "\n\033[1;92m Checking for update..\n"
 				cd ~
 				wget -q https://raw.githubusercontent.com/rooted-cyber/Termux-Test/master/files/version.txt
-				update="$(cat version.txt|grep -o "1.0")"
+				update="$(cat version.txt|grep -o "2.0")"
 				if [ -z $update ];then
 				update-tool
 				fi
@@ -39,9 +39,10 @@ banner() {
 				}
 	menu () {
 		banner
-		printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Termux Basic Test \033[1;91m(\033[1;97m Questions : 40 and score : 800\033[1;91m)\n"
+		printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Termux Basic Test \033[1;91m(\033[1;97m Questions : 50 and Points : 1000\033[1;91m)\n"
 		printf "\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Your Last Score\n"
 		printf "\033[1;92m[\033[0m3\033[1;92m]\033[1;93m Exit\n\n\n"
+		printf "\n\033[1;92m Your current version : 2.0\n\n"
 		uo
 		printf "\n\033[1;93m Your tool is update\n\n"
 		choose
