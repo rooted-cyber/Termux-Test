@@ -5,9 +5,11 @@
 
 ## Telegram Group : https://t.me/rootedcyber1
 
+<pre>
  $ apt update
  $ apt upgrade
  $ apt install git
  $ git clone https://github.com/rooted-cyber/Termux-Test
  $ cd Termux-Test
  $ bash test.sh
+</pre>
